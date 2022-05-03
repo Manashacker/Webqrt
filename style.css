@@ -1,106 +1,104 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 #banner{
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(7, 255, 255, 0.753)) ,url(software.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(7, 255, 255, 0.753)), url(software.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
 }
 #logo{
-    width: 140px;
+    color: white;
     position: absolute;
-    top: 4%;
-    left: 10%;
+    top: 8%;
+    left: 8%;
+    transform: trnaslatey(-50%);
+    z-index: 2;
+}
+#logo a{
     color: white;
+    text-decoration: none;
 }
-.banner-text{
-    text-align: center;
-    color: white;
-    padding: 180px;
-
-}
-.banner-text h1{
-font-size: 130px;
-font-family: 'Kaushan Script', cursive;
-}
-.banner-text p{
-    font-size: 20px;
-    font-style: italic;
+#text1{
+    color: #fbfbfb;
+        position: absolute;
+        top: 15%;
+        left: 8%;
+        transform: trnaslatey(-50%);
+        z-index: 2;
+        font-size: 8vw;
+        margin: auto;
+        line-height: 80px;
+        font-family:'Kaushan Script', cursive ;
 }
 .banner-btn{
-    margin:70px auto 0;
     
+    
+    transform: trnaslatey(-50%);
 }
 .banner-btn a{
-    width: 150px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 12px 0;
-    color: #fff;
-    border: .5px solid #fff;
     position: absolute;
-    top: 50%;
-    left: 55%;
     z-index: 1;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border:0.5px solid aqua ;
     transition: color 0.5s;
-    
+    top: 35%;
+    left: 8%;
+    transform: translateY(-50%);
 }
-#btnt{
+#btn1{
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 45%;
+    left: 8%;
 }
 .banner-btn a span{
-width: 0;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-background: white;
-z-index: -1;
-transition: 0.5s;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: aqua;
+    z-index: -1;
+    transition: 0.5s;
 }
 .banner-btn a:hover span{
     width: 100%;
-
 }
-.banner-btn a:hover {
- 
-color: black;
+.banner-btn a:hover{
+    color: white;
 }
 #sidenav{
-    width: 240px;
+    width: 100px;
     height: 100vh;
     position: fixed;
-    right: -240px;
+    right: -100px;
     top: 0;
-    background: rgb(2, 154, 255);
+    background-color: rgb(2, 154, 255);
     z-index: 2;
     transition: 0.5s;
 }
 nav ul li{
-    list-style: none;
-    margin-top: 50px;
-    margin-right: 10px;
+   list-style: none;
+   margin-top: 60px;
+   margin-right: 10px;
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: white;
 
 }
 #menubtn{
     width: 50px;
     height: 50px;
-    background-color: rgb(2, 154, 255);
+    background-color:rgb(2, 154, 255) ;
     text-align: center;
     position: fixed;
-    right: 30px;
-    top: 20px;
+    right: 10px;
+    top: 15px;
     border-radius: 3px;
     z-index: 3;
     cursor: pointer;
@@ -108,15 +106,4 @@ nav ul li a{
 #menubtn img{
     width: 20px;
     margin-top: 15px;
-    
-
-}
-@media screen and (max-width: 770px){
-    .banner-text h1{
-    font-size: 44px;
-
-    }
-    .banner-btn a{
-        display: block;
-    }
 }
